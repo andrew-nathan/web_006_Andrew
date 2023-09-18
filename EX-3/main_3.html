@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <script>
+        function login()
+        {
+            var username = document.getElementById("mail").value;
+            if (username === "user") {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username . Please try again.");
+            }
+        }
+        function bno()
+        {
+            var n = document.getElementById("no").value;
+            if (n>999)
+            {
+                alert("Enter the correct building number");
+            } 
+        }
+    </script>
+    <div style="text-align: center;">
+        <h3>Address</h3>
+        <form id="search-form">
+            <label for="mail">Mail Id:</label><br>
+            <input id="mail" name="id" type="text" ><br><br>
+            <label for="no">Building No:</label><br>
+            <input type="number" id="no" name="no" onblur="bno()"><br><br>
+            <label for="stname">Street Name:</label><br>
+            <input type="text" id="stname" name="stname"><br><br>
+            <label for="locality">locality:</label><br>
+            <input type="text" id="locname" name="locname"><br><br>
+            <label for="district">District:</label><br>
+            <select id="district" name="district">
+                <option value="none">Select Location</option>
+                <option value="chennai">chennai</option>
+                <option value="kanchi">kanchipuram</option>
+                <option value="kovai">coimbature</option>
+            </select><br><br>
+            <input type="submit" value="Submit" onclick="login()">
+        </form>
+    </div>
+</body>
+</html>

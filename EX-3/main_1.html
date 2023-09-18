@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <script>
+        function login() {
+        var username = document.getElementById("no").value;
+        if (username === "user") {
+            alert("Login successful!");
+        } else {
+            alert("Invalid username or password. Please try again.");
+        }
+    }
+    </script>
+    <div style="text-align: center;">
+        <h3>Sign Up</h3>
+        <form>
+            <label for="mail">Mail Id:</label><br>
+            <input id="no" name="id" type="text" id="username"><br><br>
+            <label for="passd">Password:</label><br>
+            <input id="passd" name="id" type="Password"><br><br>
+            <button type="button" onclick="login()">SUBMIT</button>
+        </form>
+    </div>
+    
+</body>
+</html>

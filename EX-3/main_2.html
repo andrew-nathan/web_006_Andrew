@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <script>
+        function login()
+        {
+            var username = document.getElementById("no").value;
+            if (username === "user") {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username . Please try again.");
+            }
+        }
+        function name()
+        {
+            var name = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            if(name=="" ||  lname == "")
+            {
+                alert("enter valid name");
+                document.getElementById("fname").focus();
+            }
+        }
+    </script>
+    <div style="text-align: center;">
+        <h3>Enter The Details </h3>
+        <form>
+            <label for="mail">Mail Id:</label><br>
+            <input id="no" name="id" type="text"><br><br>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="first name" onblur="name()"><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="last name" onblur="name()"><br><br>
+            <input type="submit" value="Submit" onclick="login()">
+        </form>
+    </div>
+</body>
+</html>

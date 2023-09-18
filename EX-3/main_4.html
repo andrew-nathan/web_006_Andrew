@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <script>
+        var shop_name = document.getElementById("sh").value;
+        var item_name = document.getElementById("it").value;
+        var qty = document.getElementById("qt").value;
+        function login()
+        {
+            var username = document.getElementById("mail").value;
+            if (username === "user")
+            {
+                alert("Login successful!");
+                
+            } 
+            else
+            {
+                alert("Invalid username . Please try again.");
+            }
+        }
+    </script>
+    <div style="text-align: center;">
+        <h3>ORDER</h3>
+        <form>
+            <label for="mail">Mail Id:</label><br>
+            <input type="text" id="mail" name="mail"><br><br>
+            Shop name:<input type="text" id="sh" name="mail"><br><br>
+            Menu:<input type="text" id="it" name="mail"><br><br>
+            Quantity:<input type="number" id="qt" name="mail"><br><br>
+            <button id="submit" onclick="login()">SUBMIT</button><br><br><br><br>
+        </form>
+
+    </div>
+    
+</body>
+</html>
