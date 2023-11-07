@@ -1,0 +1,103 @@
+<web-app>   
+    
+    <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>quiz</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/submitAnswers</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Hellos</servlet-name>
+        <servlet-class>favour</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hellos</servlet-name>
+        <url-pattern>/food</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Hel</servlet-name>
+        <servlet-class>cook</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hel</servlet-name>
+        <url-pattern>/cookieC1</url-pattern>
+    </servlet-mapping>
+
+
+     <servlet>
+        <servlet-name>H1</servlet-name>
+        <servlet-class>hidden1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>H1</servlet-name>
+        <url-pattern>/hidden1</url-pattern>
+    </servlet-mapping>
+
+
+     <servlet>
+        <servlet-name>H2</servlet-name>
+        <servlet-class>hidden2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>H2</servlet-name>
+        <url-pattern>/hidden2</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- Program p9_u1.java -->
+    <servlet>
+        <servlet-name>p9_u1</servlet-name>
+        <servlet-class>p9_u1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p9_u1</servlet-name>
+        <url-pattern>/url1</url-pattern>
+    </servlet-mapping>
+<!-- Program p9_u2.java -->
+    <servlet>
+        <servlet-name>p9_u2</servlet-name>
+        <servlet-class>p9_u2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p9_u2</servlet-name>
+        <url-pattern>/url2</url-pattern>
+    </servlet-mapping>
+    <!-- Program p10_sessid1.java -->
+    <servlet>
+        <servlet-name>p10_s1</servlet-name>
+        <servlet-class>p10_sessid1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p10_s1</servlet-name>
+        <url-pattern>/sessid1</url-pattern>
+    </servlet-mapping>
+<!-- Program p10_sessid2.java -->
+    <servlet>
+        <servlet-name>p10_s2</servlet-name>
+        <servlet-class>p10_sessid2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p10_s2</servlet-name>
+        <url-pattern>/sessid2</url-pattern>
+    </servlet-mapping>
+</web-app>

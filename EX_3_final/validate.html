@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function validateForm() {
+        var x = document.forms["myForm"]["email"].value;
+        var y = document.forms["myForm"]["password"].value;
+        var atposition=x.indexOf("@");
+        var dotposition=x.lastIndexOf(".");
+        if (atposition==-1)
+        {
+            alert("Please enter a valid e-mail address");
+            return false;
+        }
+        if (y == "") {
+            alert("Password must be filled out");
+            return false;
+        }
+        alert("login successful");
+    }
+</script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    padding: 16px;
+    background-color: white;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body>
+  <div class="container">
+      <form name="myForm"  onsubmit="return validateForm()" method="post">
+          Email: <input type="text" name="email">
+          <br>
+          Password: <input type="password" name="password">
+          <br>
+          <input type="submit" value="Submit">
+      </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questions Form</title>
+<style>
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 10px;
+  }
+  .logo img {
+    height: 70px; 
+    width: 100px;
+    margin-top: -10px;/* Adjust as needed */
+  }
+  .menu-right {
+    display: flex;
+    align-items: center;
+  }
+  .rating {
+    margin-right: 20px;
+  }
+  .header-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  .card {
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .container {
+    max-width: 600px;
+    margin-top: 100px;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* So padding doesn't affect width */
+  }
+  button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #4cae4c;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="download.jpg" alt="Logo"> <!-- Replace with your logo URL -->
+    </div>
+    <h1>The Grill</h1>
+    <div class="menu-right">
+      <a href="special.html">
+        <button class="header-button">Our Specials</button>
+      </a>
+      <a href="rating.html">
+        <button class="header-button" >WinPrizes</button>
+      </a>
+      
+    </div>
+  </div>
+
+<div class="container">
+  <form action="submitAnswers" method="post">
+    <!-- Card 1 -->
+    <div class="card">
+      <p>Question 1: What is the capital of France?</p>
+      <input type="text" name="answer1" required>
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+      <p>Question 2: Who wrote 'Romeo and Juliet'?</p>
+      <input type="text" name="answer2" required>
+    </div>
+    <!-- Card 3 -->
+    <div class="card">
+      <p>Question 3: What is the boiling point of water?</p>
+      <input type="text" name="answer3" required>
+    </div>
+    <!-- Card 4 -->
+    <div class="card">
+      <p>Question 4: How many continents are there on Earth?</p>
+      <input type="text" name="answer4" required>
+    </div>
+    <!-- Card 5 -->
+    <div class="card">
+      <p>Question 5: What is the largest ocean on Earth?</p>
+      <input type="text" name="answer5" required>
+    </div>
+    <!-- Submit button for the form -->
+    <button type="submit">Submit Answers</button>
+  </form>
+</div>
+
+</body>
+</html>
