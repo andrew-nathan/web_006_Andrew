@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<food-items>
+    <food>
+        <name> idli</name> 
+        <quantity>2</quantity>
+        <price>30</price>
+        
+    </food>
+    <food>
+        <name>dosa</name> 
+        <quantity>1</quantity>
+        <price>50</price>
+       
+    </food>
+    <food>
+        <name>curd rice</name> 
+        <quantity>1</quantity>
+        <price>50</price>
+        
+    </food>   
+</food-items>
